@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Login Page with Slider</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10;
+            padding: 10;
+            background: linear-gradient(to right, #c084fc, #8b5cf6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .slider-container {
+            width: 100%;
+            max-width: 4500px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            margin-left:auto;
+            margin-right:auto;
+            background: linear-gradient(to bottom, #0a0a0a, #272424);
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.1s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .slide img {
+            width: 70%;
+            border-radius: 10px;
+        }
+
+        .slide h2 {
+            font-size: 1.5em;
+            margin: 15px 0;
+            color: #fff;
+        }
+
+        .slide p {
+            font-size: 1em;
+            color: #ddd;
+        }
+
+        .button {
+            background-color: #47434b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #8e998e;
+        }
+
+        /* Dots Navigation */
+        .navigation-dots {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .dot {
+            width: 9px;
+            height: 10px;
+            background-color: #bbb;
+            border-radius: 50%;
+            margin: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .dot.active {
+            background-color: #779d79;
+        }
+
+        /* Responsive Styles */
+        @media (min-width: 768px) {
+            .slider-container {
+                max-width: 600px;
+            }
+        }
+
+        /* Role Selection */
+        .role-selection {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .role-selection h3 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .role-button {
+            background-color: #a464b7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .role-button:hover {
+            background-color: #2b0430;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Slider Section -->
+        <div class="slider-container">
+            <div class="slides">
+                <div class="slide">
+                    <img src="logo.gif" alt="logo">
+                    <h2>Welcome to EduFlow</h2>
+                    <p>The hub for your academic universe </p>
+                    <button class="button" onclick="document.location='index.html'">Get Started </button>
+                </div>
+                <div class="slide">
+                    <img src="to do list.jpg" alt="Placeholder Image">
+                    <h2> to do list </h2> </h2>
+                    <p>maks task easy and effective </p>
+                    <button class="button">Learn More</button>
+                </div>
+                <div class="slide">
+                    <img src="timetable.jpg" alt="Placeholder Image">
+                    <h2>timlable </h2>
+                    <p>helps you organize you time </p>
+                    <button class="button">Explore Tips</button>
+                </div>
+            </div>
+            <!-- Dots Navigation -->
+            <div class="navigation-dots">
+                <div class="dot active" onclick="moveSlide(0)"></div>
+                <div class="dot" onclick="moveSlide(1)"></div>
+                <div class="dot" onclick="moveSlide(2)"></div>
+            </div>
+        </div>
+
+        <!-- Role Selection -->
+        <div class="role-selection">
+            <h3>Are you a Teacher or a Student?</h3>
+            <button class="role-button" onclick="redirectRole('teacher')">I am a Teacher</button>
+            <button class="role-button" onclick="redirectRole('student')">I am a Student</button>
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelector('.slides');
+        const dots = document.querySelectorAll('.dot');
+
+        function moveSlide(index) {
+            currentIndex = index;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+            updateDots();
+        }
+
+        function updateDots() {
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        function redirectRole(role) {
+            if (role === 'teacher') {
+                alert('Redirecting to Teacher Login Page'); // Replace with actual redirection logic
+            } else if (role === 'student') {
+                alert('Redirecting to Student Login Page'); // Replace with actual redirection logic
+            }
+        }
+    </script>
+</body>
+</html>
