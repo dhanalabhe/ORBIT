@@ -1,0 +1,91 @@
+body {
+    background: radial-gradient(to bottom, #211751, #170f41, #466c92);
+    color: #fff; 
+    height: 100vh; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Box Styling - Black Background */
+.box {
+    background: #171515; 
+    padding: 150px;
+    border-radius: 30px; 
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); 
+    text-align: center;
+    width: 500px;
+    animation: fadeIn 5s ease-in-out; 
+}
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(to right, #211751, #170f41, #466c92);
+    font-family: Arial, sans-serif;
+}
+
+/* Black Box Styling */
+.box {
+    background: #000; 
+    color: #fff; 
+    
+    align-self: center;
+    position: fixed;
+    display: flex;
+    height: 100px; 
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    overflow: hidden; 
+}
+
+/* Left and Right Sections */
+.left-section, .right-section {
+    flex: 1; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Divider Line */
+.divider {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    height: 50%; 
+    width: 2px; 
+    background: rgba(255, 255, 255, 0.7); 
+}
+/* Typography for Black Box */
+.box h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.box p {
+    color: #ccc; 
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #7e57c2; /* Purple button for contrast */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6a45a1; /* Darker purple on hover */
+}
+
+
+

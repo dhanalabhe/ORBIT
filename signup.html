@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #211751, #8bafe8);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0%;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    </style>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: flex-start; 
+        align-items: flex-start; 
+        height: 10%;
+        background-color: #3d3c5e; 
+        color: #fff;
+        padding: 32px; 
+    }
+
+    .signup-box {
+        background-color: #181725; /* Box background */
+        padding: 1px; 
+        border-radius: 32px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        max-width: 800px;
+        min-height: 630%;
+        margin-right: 85%;
+        width: 380px;
+    }
+    
+    .input-group {
+    display: flex;
+    gap: 10px;
+    }
+
+    .input-group select {
+       display: flex;
+       background-color: #2c2b3f;
+       border: none;
+        border-radius: 14px;
+        padding: 5px;
+        margin-bottom: 12px; 
+        color: #fff;
+        font-size: 14px; 
+        outline: none;
+        color: #aaa;
+    }
+    .signup-box h2 {
+        margin-top: 5px;
+        margin-bottom: 7px;
+        font-size: 22px; 
+    }
+
+    .signup-box form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signup-box input {
+        background-color: #2c2b3f;
+        border: none;
+        border-radius: 14px;
+        padding: 5px;
+        margin-bottom: 12px;
+        color: #fff;
+        font-size: 14px; 
+        outline: none;
+    }
+
+    .signup-box input::placeholder {
+        color: #aaa;
+    }
+
+    
+    .signup-box input:focus {
+        border: 1px solid #911c91;
+    }
+    
+    .text
+    {
+        line-height: 1%;
+    }
+
+    .text a
+    {
+        color: #911c91;
+    }
+
+    .signup-box button {
+        width: 50%;
+        margin-left: 24%;
+        background-color: #911c91;
+        border: none;
+        color: #fff;
+        padding: 6px;
+        border-radius: 40px;
+        cursor: pointer;
+        font-size: 16px; 
+    }
+
+    .signup-box button:hover {
+        background-color: #611ed3;
+    }
+
+    .signup-box .social-login {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px; 
+    }
+
+   
+    .signup-box .social-login button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        position: relative;
+        left: -45px;
+        background-color: #2c2b3f;
+        width: 50%;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 30px;
+        font-size: 14px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .signup-box .social-login button img {
+        
+        height: 16px;
+    }
+</style>
+    
+    <link rel="stylesheet" href="signupstyle.css">
+    <link rel="signUp" href="login.html">
+</head>
+<body>
+    <div class="box">
+        <div class="left-section">
+            <div class="signup-box">
+                <h2>Create an account</h2>
+                <form>
+                    <input type="text" placeholder="Full Name">
+                    
+                
+                    <input type="email" placeholder="Email">
+                    <div class="input-group">
+                        <input type="tel" id="contact" placeholder="Contact No" title="Format: 123-456-7890">
+                        <input type="date" placeholder="DOB:" required>
+                        
+                    </div>
+                    <div class="input-group">
+                          <select id="name" required>
+                            <option value="" disabled selected>Select your Course</option>
+                            <option value="FE">FE</option>
+                            <option value="Computer ">Computer</option>
+                            <option value="IT">IT</option>
+                            <option value="ENTC">ENTC</option>
+                            <option value="Mechanical">Mechanical</option>
+                        </select>
+                        
+                        <select id="name" required>
+                            <option value="" disabled selected>Select your Current Year</option>
+                            <option value="FE">FE</option>
+                            <option value="SE">SE</option>
+                            <option value="TE">TE</option>
+                            <option value="BE">BE</option>
+                        </select>
+                    </div>
+                    <input type="password" placeholder="Enter your password">
+                    
+                    <button type="submit">Create account</button>
+                </form>
+                <div class="text">
+                    <h6 class="or-text">Already have an account <a href="login.html">login</a></h4>
+                    <h5 class="or-text">-----------or SignUp with------------</h5>
+                </div>
+                <div class="social-login">
+                    <button><img src="https://img.icons8.com/color/16/000000/google-logo.png"/> Google</button>
+                    <button><img src="https://img.icons8.com/color/16/000000/linkedin.png" alt="LinkedIn" />LinkedIn</button>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="right-section">
+            <h3>Right Side</h3>
+            <p>here we have to paste our dashboard logo and name.</p>
+        </div>
+    </div>
+</body>
+</html>
