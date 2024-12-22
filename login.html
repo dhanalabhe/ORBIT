@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #5e21c0, #b32272);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            color: white;
+           }
+
+          .container {
+            text-align: center;
+          }
+
+          h1 {
+            font-size: 2.5rem;
+          }
+
+         p {
+            font-size: 1.2rem;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="signUp" href="signup.html">
+</head>
+</head>
+<body>
+    <div class="box">
+        <div class="left-section">
+            <h3>Left Side</h3>
+            <p>here we have to paste our dashboard logo and name.</p>
+        </div>
+        <div class="divider"></div>
+        <div class="right-section">
+            <div class="container">
+                <!-- Login Form Box -->
+                <div class="login-box">
+                    <h2>Login</h2>
+                    <p class="signup-text">Doesn't have an account yet? <a href="signup.html">Sign Up</a></p>
+                    
+                    <!-- Email Input -->
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="you@example.com">
+                    </div>
+                    
+                    <!-- Password Input -->
+                    <div class="input-group password-group">
+                        <label>Password <a href="#" class="forgot-password">Forgot Password?</a></label>
+                        <input type="password" placeholder="Enter 6 characters or more">
+                        
+                    </div>
+        
+                    
+                    <!-- Login Button -->
+                    <button class="login-button">LOGIN</button>
+        
+                    <!-- Social Login -->
+                    <p class="or-text">----------or login with----------</p>
+                    <div class="social-login">
+                        <button class="google-btn">Google</button>
+                        <button class="linkedIn-btn">LinkedIn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
