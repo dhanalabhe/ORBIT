@@ -1,0 +1,219 @@
+body {
+    background: linear-gradient(to bottom, #211751, #8BAFE8);
+    color: #fff; 
+    height: 100vh; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ /* Solid black box */
+.box {
+    background: #171515; 
+    padding: 150px;
+    border-radius: 30px; 
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); 
+    text-align: center;
+    width: 500px;
+    animation: fadeIn 5s ease-in-out; 
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #211751, #466c92);
+    font-family: Arial, sans-serif;
+}
+
+/* Black Box Styling */
+.box {
+    background: #000; /* Black box */
+    color: #fff; /* White text */
+    display: flex; 
+    width: 150  px; 
+    height: 100px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    overflow: hidden; /* Keeps everything within rounded corners */
+}
+
+/* Left and Right Sections */
+.left-section, .right-section {
+    flex: 1; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Divider Line */
+.divider {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    height: 50%; 
+    width: 2px; 
+    background: rgba(255, 255, 255, 0.7); 
+}
+
+/* Typography for Black Box */
+.box h2 {
+    color: #fff; 
+    margin-bottom: 10px;
+}
+
+.box p {
+    color: #ccc; 
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #7e57c2; /* Purple button for contrast */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6a45a1; /* Darker purple on hover */
+}
+
+
+/* Body Background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    height: 80pv;
+    background: radial-gradient(to right, #211751, #170f41, #466c92);
+}
+
+/* Container for Center Alignment */
+.container {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    background: #222222;
+    width: 360px;
+    margin-left:53%;
+    border-radius: 30px;
+    box-shadow: 0 2px 200px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+}
+
+/* Login Box */
+.login-box {
+    width: 100%;
+    text-align: left;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #c79f9f;
+}
+
+.signup-text {
+    font-size: 14px;
+    color: #acacac;
+    margin-bottom: 20px;
+}
+
+.signup-text a {
+    color: #9112c7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #eae2e2;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    border: 2px solid #9112c7;
+    border-radius: 10px;
+    font-size: 12px;
+    outline: none;
+}
+
+.password-group a {
+    float: right;
+    font-size: 12px;
+    color: #9112c7;
+    text-decoration: none;
+}
+
+.login-button {
+    width: 50%;
+    padding: 5px;
+    margin-left: 24%;
+    background-color: #9112c7;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #611ed3;
+}
+
+/* OR Text */
+.or-text {
+    text-align: center;
+    margin: 15px 0;
+    color: #999;
+    font-size: 12px;
+}
+
+/* Social Login Buttons */
+.social-login {
+    display: flex;
+    justify-content: space-between;
+}
+
+.google-btn, .linkedIn-btn {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.google-btn {
+    background-color: #222222;
+}
+
+.linkedIn-btn {
+    background-color: #222222;
+}
+
+.google-btn:hover {
+    background-color: #c1351d;
+}
+
+.linkedIn-btn:hover {
+    background-color: #2251ae;
+}
